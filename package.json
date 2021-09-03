@@ -1,0 +1,46 @@
+{
+  "name": "tailwind-html-storybook",
+  "version": "1.0.0",
+  "description": "A starter template to create Storybook Design System using TailwindCSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haneulcho/tailwind-storybook.git"
+  },
+  "keywords": [
+    "Storybook",
+    "TailwindCSS"
+  ],
+  "author": "Haneul Cho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haneulcho/tailwind-storybook/issues"
+  },
+  "homepage": "https://github.com/haneulcho/tailwind-storybook#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-viewport": "^6.3.7",
+    "@storybook/builder-webpack5": "^6.4.0-alpha.33",
+    "@storybook/html": "^6.3.8",
+    "@storybook/manager-webpack5": "^6.4.0-alpha.33",
+    "@whitespace/storybook-addon-html": "^5.0.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "storybook-addon-pseudo-states": "^1.0.0",
+    "tailwindcss": "^2.2.9"
+  },
+  "dependencies": {
+    "alpinejs": "^3.3.1"
+  }
+}
