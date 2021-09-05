@@ -1,8 +1,7 @@
-import { createPage } from './Page';
-import * as HeaderStories from '../layout/Header.stories';
+import { createHeader } from './Header';
 
 export default {
-  title: 'Example/Page',
+  title: 'Layout/Header',
   argTypes: {
     onLogin: { action: 'onLogin' },
     onLogout: { action: 'onLogout' },
@@ -10,14 +9,12 @@ export default {
   },
 };
 
-const Template = (args) => createPage(args);
+const Template = (args) => createHeader(args);
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
-  ...HeaderStories.LoggedIn.args,
+  user: {},
 };
 
 export const LoggedOut = Template.bind({});
-LoggedOut.args = {
-  ...HeaderStories.LoggedOut.args,
-};
+LoggedOut.args = {};
