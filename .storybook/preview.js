@@ -1,5 +1,4 @@
 import Alpine from 'alpinejs';
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -10,7 +9,29 @@ export const parameters = {
     },
   },
   viewport: {
-    viewports: INITIAL_VIEWPORTS,
+    viewports: {
+      small: {
+        name: 'Viewport: Small',
+        styles: {
+          width: '1440px',
+          height: '1050px',
+        },
+      },
+      medium: {
+        name: 'Viewport: Medium',
+        styles: {
+          width: '1680px',
+          height: '1050px',
+        },
+      },
+      large: {
+        name: 'Viewport: Large',
+        styles: {
+          width: '1920px',
+          height: '1050px',
+        },
+      }
+    },
   },
   html: {
     removeEmptyComments: true,
